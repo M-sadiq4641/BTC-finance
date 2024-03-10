@@ -12,7 +12,7 @@
   }
 
   @media (max-width: 992px) {
-    padding-inline: 1rem;
+    padding-inline: 2rem;
   }
 }
 
@@ -20,6 +20,10 @@ body {
   font-family: "Inter", sans-serif;
   background-color: #000606;
   color: white;
+}
+
+p {
+  color: #ebebeb;
 }
 
 h1 {
@@ -88,7 +92,7 @@ h1 {
 .hero-bg {
   background-image: url(/bct-hero-bg.png);
   min-height: 100vh;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -185,3 +189,415 @@ h1 {
     margin-top: 4rem;
   }
 }
+/* hero section ends here */
+
+/* feature section starts from here */
+
+.main-header {
+  background-image: url(/main-headerbg.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 61px;
+  letter-spacing: 0.36em;
+  padding-left: 1rem;
+  margin-bottom: 4rem;
+}
+
+.feature-main-div {
+  background-image: url("./featuresBG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 8rem;
+}
+
+.feature-cards-div {
+  background-color: #000606;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  @media (max-width: 1400px) {
+    flex-wrap: wrap;
+  }
+
+  .feature-cards {
+    gap: 1rem;
+    padding-inline: 2rem;
+    background: linear-gradient(
+      92.56deg,
+      rgba(10, 43, 51, 0.3) 17.93%,
+      rgba(46, 89, 100, 0.3) 49.19%,
+      rgba(10, 43, 51, 0.243) 72.26%
+    );
+    border-bottom: 4.55px solid #2f2f2f;
+    border-radius: 4.55px;
+    min-height: 378.93px;
+    flex: 1;
+
+    @media (max-width: 1400px) {
+      min-width: 300px;
+    }
+
+    @media (max-width: 576px) {
+      padding-inline: 1rem;
+      min-height: 300px;
+      min-width: 200px;
+
+      @media (max-width: 576px) {
+        min-height: 250px;
+      }
+    }
+
+    .feature-box {
+      display: flex;
+      align-items: center;
+      padding-block: 2rem;
+
+      @media (max-width: 576px) {
+        padding-block: 1rem;
+      }
+    }
+
+    img {
+      @media (max-width: 576px) {
+        width: 90px;
+        height: 90px;
+      }
+    }
+
+    h2 {
+      font-size: 38px;
+      font-weight: 600;
+      line-height: 47px;
+
+      @media (max-width: 1400px) {
+        font-size: 30px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 24px;
+      }
+    }
+
+    p {
+      text-wrap: balance;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 37px;
+      text-align: center;
+      color: #eeeeee;
+
+      @media (max-width: 1400px) {
+        font-size: 18px;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 15px;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+/* feature section ends here */
+
+/* burn section starts from here */
+
+.burn-main-div {
+  position: relative;
+  margin-bottom: 2rem;
+
+  .burn-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.burn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  div {
+    flex: 1;
+  }
+
+  .burn-header {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 113px;
+
+    @media (max-width: 1400px) {
+      font-size: 40px;
+      line-height: 90px;
+    }
+  }
+
+  p {
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 58px;
+    text-wrap: balance;
+
+    @media (max-width: 1400px) {
+      font-size: 24px;
+      line-height: 40px;
+    }
+  }
+}
+
+.burn-image {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 314px;
+
+    @media (max-width: 1400px) {
+      width: 200px;
+    }
+  }
+}
+/* burn section ends here */
+
+/* mining section starts here */
+
+.h2-main-header {
+  margin-bottom: 0rem;
+}
+
+.h1-main-header {
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 113px;
+  margin-bottom: 4rem;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 28px;
+    margin-bottom: 2rem;
+  }
+}
+
+.mining-bg {
+  background-image: url(/mining-circle-bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mining-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+
+  @media (max-width: 576px) {
+    gap: 2rem;
+  }
+}
+.mining-container {
+  padding: 1rem;
+  background: linear-gradient(
+    92.56deg,
+    rgba(10, 43, 51, 0.3) 17.93%,
+    rgba(46, 89, 100, 0.3) 49.19%,
+    rgba(10, 43, 51, 0.243) 72.26%
+  );
+
+  @media (max-width: 576px) {
+    max-width: 100%;
+  }
+
+  img {
+    @media (max-width: 576px) {
+      max-width: 100%;
+    }
+  }
+
+  .bronze-h2-div {
+    background: -webkit-linear-gradient(
+      90.64deg,
+      #8e491f 31.87%,
+      #d27343 50.57%,
+      #914c22 68.71%
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+  }
+}
+.bronze-main-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h4 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+
+    @media (max-width: 576px) {
+      font-size: 10px;
+    }
+  }
+
+  span {
+    color: #30d0f3;
+  }
+
+  div:nth-of-type(2) {
+    text-align: right;
+  }
+}
+
+.silver-h2-div {
+  background: -webkit-linear-gradient(
+    90deg,
+    #b1b2b4 32.27%,
+    #fdfdfd 48.64%,
+    #c8cacb 62.92%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-h2-div {
+  background: -webkit-linear-gradient(
+    90deg,
+    #ffd803 31.87%,
+    #fdfb4b 50.57%,
+    #ffd600 68.71%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.platinum-h2-div {
+  background: -webkit-linear-gradient(
+    90deg,
+    #797b7c 32.27%,
+    #dadada 48.64%,
+    #7b7d7e 62.92%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* mining section ends here */
+
+/* journey section starts from here */
+
+.journey-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  @media (max-width: 576px) {
+    gap: 2rem;
+  }
+
+  div {
+    flex: 1;
+  }
+}
+.journey-verticle {
+  padding-right: 4rem;
+}
+.journey-box-one {
+  img {
+    @media (max-width: 1400px) {
+      width: 100%;
+    }
+
+    @media (max-width: 992px) {
+      transform: rotate(90deg);
+      max-width: 500px;
+      min-width: 250px;
+    }
+  }
+}
+
+.journey-box-two {
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 26px;
+    font-weight: 600;
+
+    @media (max-width: 1500px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 992px) {
+      text-align: center;
+      text-wrap: balance;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+
+    @media (max-width: 1500px) {
+      font-size: 12px;
+    }
+
+    @media (max-width: 1200px) {
+      font-size: 10px;
+    }
+
+    @media (max-width: 992px) {
+      padding-bottom: 2rem;
+      text-align: center;
+      text-wrap: balance;
+    }
+
+    @media (max-width: 576px) {
+      padding-bottom: 10px;
+      text-align: center;
+      text-wrap: balance;
+    }
+  }
+}
+/* journey section ends here */
