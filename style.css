@@ -56,6 +56,7 @@ h1 {
   }
 
   button {
+    cursor: pointer;
     font-size: 24px;
     font-weight: 600;
     line-height: 50px;
@@ -161,6 +162,10 @@ h1 {
 
   @media (max-width: 576px) {
     gap: 1rem;
+  }
+
+  button {
+    cursor: pointer;
   }
 
   button:nth-of-type(1) {
@@ -405,9 +410,14 @@ h1 {
 
 .mining-bg {
   background-image: url(/mining-circle-bg.png);
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.mining-backgroun {
+  background-color: #000606;
+  border-radius: 12px;
 }
 
 .mining-wrapper {
@@ -417,12 +427,13 @@ h1 {
   gap: 4rem;
   flex-wrap: wrap;
   padding-bottom: 4rem;
-
   @media (max-width: 576px) {
     gap: 2rem;
   }
 }
 .mining-container {
+  border-radius: 12px;
+
   padding: 1rem;
   background: linear-gradient(
     92.56deg,
@@ -517,6 +528,13 @@ h1 {
 
 /* journey section starts from here */
 
+.journey-congtainer {
+  background-image: url(/journey-background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+}
+
 .journey-wrapper {
   display: flex;
   justify-content: space-between;
@@ -601,3 +619,84 @@ h1 {
   }
 }
 /* journey section ends here */
+
+/* pool section starts from here */
+
+.kaspa-container {
+  background-image: url(/public/pool-BG.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  @media (max-width: 1650px) {
+    background-size: 350px;
+  }
+
+  @media (max-width: 576px) {
+    background-size: 200px;
+  }
+}
+
+.pool-main-header {
+  margin-bottom: 0;
+}
+
+.kaspa-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    92.56deg,
+    rgba(10, 43, 51, 0.3) 17.93%,
+    rgba(46, 89, 100, 0.3) 49.19%,
+    rgba(10, 43, 51, 0.243) 72.26%
+  );
+  min-width: 330px;
+  min-height: 260px;
+  border-bottom: 4.55px solid #2f2f2f;
+  border-radius: 12px;
+
+  @media (max-width: 576px) {
+    min-width: 250px;
+  }
+
+  span {
+    color: #30d0f3;
+  }
+}
+
+.kaspa-wrapper {
+  display: grid;
+  place-items: center;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+
+  h4 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 47px;
+    text-align: center;
+
+    @media (max-width: 576px) {
+      font-size: 30px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: center;
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+}
+/* pool section ends here */
