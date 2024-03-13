@@ -41,7 +41,7 @@ h1 {
   );
   backdrop-filter: blur(8px);
   border-bottom: 0.67px solid #07a1c399;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .navbar-wrapper {
@@ -352,6 +352,11 @@ h1 {
       font-size: 40px;
       line-height: 90px;
     }
+
+    @media (max-width: 576px) {
+      line-height: 60px;
+      font-size: 30px;
+    }
   }
 
   p {
@@ -403,8 +408,9 @@ h1 {
   }
 
   @media (max-width: 576px) {
-    font-size: 28px;
-    margin-bottom: 2rem;
+    font-size: 30px;
+    line-height: normal;
+    margin-bottom: 1rem;
   }
 }
 
@@ -413,6 +419,11 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  padding-top: 2rem;
+
+  @media (max-width: 576px) {
+    padding-top: 0;
+  }
 }
 
 .mining-backgroun {
@@ -562,6 +573,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 4rem;
+  gap: 4rem;
 
   @media (max-width: 992px) {
     flex-direction: column;
@@ -570,6 +582,7 @@ h1 {
   }
 
   @media (max-width: 576px) {
+    margin-bottom: 2rem;
     gap: 2rem;
   }
 
@@ -658,6 +671,10 @@ h1 {
     background-size: 350px;
   }
 
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
+
   @media (max-width: 576px) {
     background-size: 200px;
   }
@@ -683,8 +700,8 @@ h1 {
   border-bottom: 4.55px solid #2f2f2f;
   border-radius: 12px;
 
-  @media (max-width: 576px) {
-    min-width: 250px;
+  @media (max-width: 768px) {
+    min-width: 100%;
   }
 
   span {
@@ -702,6 +719,7 @@ h1 {
 
   @media (max-width: 576px) {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-row-gap: 2rem;
   }
 
   h4 {
@@ -739,6 +757,10 @@ h1 {
   grid-row-gap: 4rem;
   place-items: center;
 
+  @media (max-width: 768px) {
+    grid-row-gap: 2rem;
+  }
+
   @media (max-width: 576px) {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
@@ -759,6 +781,12 @@ h1 {
   border-bottom: 4.55px solid #2f2f2f;
   width: 400px;
   min-height: 266px;
+
+  @media (max-width: 768px) {
+    min-width: 100%;
+    justify-content: space-evenly;
+    padding-inline: 0;
+  }
 
   @media (max-width: 576px) {
     width: 250px;
@@ -815,6 +843,12 @@ h1 {
   width: 400px;
   min-height: 266px;
 
+  @media (max-width: 768px) {
+    min-width: 100%;
+    justify-content: space-evenly;
+    padding-inline: 0rem;
+  }
+
   @media (max-width: 576px) {
     width: 250px;
   }
@@ -836,11 +870,11 @@ h1 {
     }
   }
 
-  span {
+  /* span {
     @media (max-width: 576px) {
       display: block;
     }
-  }
+  } */
 }
 
 .kaspa-block-flex {
@@ -873,7 +907,7 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    padding-block: 1rem 2rem;
+    padding-block: 1.5rem;
 
     @media (max-width: 576px) {
       padding-block: 1rem;
@@ -899,7 +933,7 @@ h1 {
   justify-content: flex-start;
   align-items: flex-end;
   position: relative;
-  padding: 1rem;
+  padding: 2rem;
   min-width: 1130px;
 
   @media (max-width: 576px) {
@@ -909,7 +943,7 @@ h1 {
   img {
     position: absolute;
     inset: 0;
-    width: 100%;
+    width: 99%;
     height: 100%;
   }
 
@@ -925,15 +959,30 @@ h1 {
   }
 
   h2:nth-of-type(2) {
+    padding-left: 3rem;
+    width: 150px;
+
     @media (max-width: 576px) {
       padding-left: 1rem;
-      width: 150px;
+      width: 120px;
+    }
+  }
+
+  h2:nth-of-type(3) {
+    width: 220px;
+
+    @media (max-width: 1536px) {
+      max-width: 100px;
     }
   }
 
   h2:nth-of-type(4) {
     width: 100%;
     flex: 1;
+
+    @media (max-width: 576px) {
+      padding-left: 5.5rem;
+    }
   }
 }
 
@@ -1129,6 +1178,7 @@ h1 {
   }
 
   p {
+    cursor: pointer;
     font-size: 14px;
     font-weight: 600;
     line-height: 32px;
@@ -1150,6 +1200,7 @@ h1 {
     }
 
     img {
+      cursor: pointer;
       @media (max-width: 768px) {
         width: 20px;
       }
@@ -1163,12 +1214,15 @@ h1 {
     gap: 5px;
 
     img {
+      cursor: pointer;
       @media (max-width: 768px) {
         width: 20px;
       }
     }
 
     p {
+      cursor: pointer;
+
       @media (max-width: 768px) {
         font-size: 10px;
       }
